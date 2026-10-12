@@ -119,13 +119,8 @@ You can also apply the same radius to every corner:
 
 ## 📸 Screenshots
 
-Add a screenshot of the application to showcase the interface.
+![Border Radius Previewer](/Screenshot/previewer.png)
 
-For example, save your screenshot in a folder named `screenshots` and use the following Markdown:
-
-```markdown
-![Border Radius Previewer](./screenshots/previewer.png)
-```
 
 Recommended screenshot: the application displaying the preview, corner controls, presets, and generated CSS code.
 
