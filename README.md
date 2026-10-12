@@ -121,9 +121,6 @@ You can also apply the same radius to every corner:
 
 ![Border Radius Previewer](/Screenshot/previewer.png)
 
-
-Recommended screenshot: the application displaying the preview, corner controls, presets, and generated CSS code.
-
 ## 📚 Learning Objectives
 
 This project helps develop practical skills in:
