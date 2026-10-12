@@ -57,7 +57,7 @@ No external libraries or package installations are required.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/border-radius-previewer.git
+git clone https://github.com/Taunt-byte/Border-Radius-Previewer.git
 ```
 
 Replace `YOUR-USERNAME` with your GitHub username.
