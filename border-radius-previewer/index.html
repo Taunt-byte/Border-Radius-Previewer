@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Border Radius Previewer</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="app">
+        <header class="header">
+            <div>
+                <span class="tag">CSS3 TOOL</span>
+                <h1>Border Radius <span>Previewer</span></h1>
+                <p>Visualize e personalize os cantos de um elemento CSS.</p>
+            </div>
+        </header>
+
+        <div class="workspace">
+            <!-- Painel de controles -->
+            <section class="panel controls">
+                <h2>Border Radius Values</h2>
+                <p class="description">
+                    Altere os valores para modificar a forma.
+                </p>
+
+                <div class="control-group">
+                    <label for="topLeft">Canto superior esquerdo</label>
+                    <div class="control-row">
+                        <input type="range" id="topLeft"
+                            min="0" max="100" value="20">
+                        <input type="number" id="topLeftValue"
+                            min="0" max="100" value="20">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="topRight">Canto superior direito</label>
+                    <div class="control-row">
+                        <input type="range" id="topRight"
+                            min="0" max="100" value="20">
+                        <input type="number" id="topRightValue"
+                            min="0" max="100" value="20">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="bottomRight">Canto inferior direito</label>
+                    <div class="control-row">
+                        <input type="range" id="bottomRight"
+                            min="0" max="100" value="20">
+                        <input type="number" id="bottomRightValue"
+                            min="0" max="100" value="20">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="bottomLeft">Canto inferior esquerdo</label>
+                    <div class="control-row">
+                        <input type="range" id="bottomLeft"
+                            min="0" max="100" value="20">
+                        <input type="number" id="bottomLeftValue"
+                            min="0" max="100" value="20">
+                    </div>
+                </div>
+
+                <h3>Formatos predefinidos</h3>
+
+                <div class="presets">
+                    <button class="preset" data-radius="0">Normal</button>
+                    <button class="preset" data-radius="4">Small</button>
+                    <button class="preset" data-radius="8">Medium</button>
+                    <button class="preset" data-radius="16">Large</button>
+                    <button class="preset" data-radius="32">Extra Large</button>
+                    <button class="preset" data-radius="999">Circle</button>
+                </div>
+
+                <button id="resetButton" class="secondary-button">
+                    Restaurar valores
+                </button>
+            </section>
+
+            <!-- Painel de pré-visualização -->
+            <section class="panel preview-panel">
+                <h2>Preview</h2>
+                <p class="description">
+                    O formato será atualizado em tempo real.
+                </p>
+
+                <div class="preview-area">
+                    <div id="previewBox" class="preview-box"></div>
+                </div>
+
+                <div class="code-header">
+                    <h3>CSS Code</h3>
+                    <button id="copyButton">Copiar CSS</button>
+                </div>
+
+                <pre class="code-block"><code id="cssCode"></code></pre>
+
+                <p id="copyMessage" aria-live="polite"></p>
+            </section>
+        </div>
+
+        <!-- Exemplos de diferentes valores -->
+        <section class="panel examples">
+            <h2>Exemplos de Border Radius</h2>
+
+            <div class="examples-grid">
+                <button class="example" data-radius="0">
+                    <span class="example-box" style="border-radius: 0"></span>
+                    <span>0px</span>
+                </button>
+
+                <button class="example" data-radius="4">
+                    <span class="example-box" style="border-radius: 4px"></span>
+                    <span>4px</span>
+                </button>
+
+                <button class="example" data-radius="8">
+                    <span class="example-box" style="border-radius: 8px"></span>
+                    <span>8px</span>
+                </button>
+
+                <button class="example" data-radius="16">
+                    <span class="example-box" style="border-radius: 16px"></span>
+                    <span>16px</span>
+                </button>
+
+                <button class="example" data-radius="32">
+                    <span class="example-box" style="border-radius: 32px"></span>
+                    <span>32px</span>
+                </button>
+
+                <button class="example" data-radius="999">
+                    <span class="example-box circle"></span>
+                    <span>Circular</span>
+                </button>
+            </div>
+        </section>
+
+        <footer>
+            <p>Desenvolvido para praticar HTML, CSS e JavaScript.</p>
+        </footer>
+    </main>
+</body>
+</html>
